@@ -12,7 +12,7 @@ import FoundationNetworking
 /// You can also call the `sharedInstance` property of `Session` to get a
 /// singleton instance.  This will allow you to configure the singleton once,
 /// and continually reuse it later without the need to re-configure it.
-open class Session {
+open class Session: @unchecked Sendable {
     // MARK: - Properties
     
     /// This property holds the authentication information (credentials, or API
